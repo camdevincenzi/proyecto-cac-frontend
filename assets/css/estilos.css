@@ -1,0 +1,308 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+body {font-family: 'Poppins', sans-serif !important;
+  background-color: #080808;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23440a67' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+/* Typography */
+p, a {font-weight: 300;}
+.h2 {font-size: 40px;}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+}
+.regular-400 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav {
+  background-color: transparent !important;
+}
+#main_nav .nav-item {
+  color: #fff;
+}
+
+.link {
+  padding-bottom: 1px;
+  color: hsl(222, 25%, 14%);
+  position: relative;
+}
+.link::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: #cbb6ec;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.link:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon:hover{
+  transform: scale(1.2);
+}
+.banner-button {
+  padding: 10px 20px;
+  background-color: #4f1777;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
+  animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(230, 237, 255, 0);
+  }
+}
+.banner-button:hover{
+  color: #ffffff;
+}
+
+/* Home */
+#index_banner {
+  background-image: url(/assets/img/banner-bg-01.jpg);
+  background-position: center center; 
+  background-size: cover;
+  min-height: 100vh;;
+  width: 100%;
+}
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #cbb6ec !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #cbb6ec !important;
+  /* las rayas de abajo del carrousel van de color azul */
+}
+.logo {
+  width: 8rem;
+}
+.filter-btn, .ver-clases{
+  border: 2px solid #b4aee83b;
+  border-radius: 3px;
+  margin: 10px;
+}
+.filter-btn:hover,
+.ver-clases:hover{
+  background-color: #b4aee83b;
+}
+.filter-btn:focus{
+  background-color: #5f3b8b;
+  border: 2px solid #5f3b8b;
+}
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.897) 0%, rgba(67, 0, 94, 0) 33.333%, rgb(44, 6, 68) 66.666%, rgba(0, 0, 0, 0.11) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: rgba(255, 255, 255, 0.753);
+  border-color: rgb(255, 255, 255);
+  transition: .5s;
+}
+.service-work span {
+  background-color: #08080870;
+  border: 2px solid #b4aee8;
+}
+.service-work span:hover {
+  background-color: rgba(16, 0, 34, 0.582);
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.897) 0%, rgba(67, 0, 94, 0) 33.333%, rgb(44, 6, 68) 66.666%, rgba(0, 0, 0, 0.11) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+.recent-work-content h3,
+.recent-work-content p {
+  color: white;
+}
+/* nosotros */
+#about-us-banner{
+  background-image: url(/assets/img/banner-bg-2.jpg);
+  background-position: center center; 
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+.arrow i{
+  fill: hsl(243, 80%, 62%);
+  animation: arrowAnimation 1.5s infinite ease-out;
+}
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0
+  }
+  30% {
+    opacity: 1
+  }
+  60% {
+    opacity: 1
+  }
+  to {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0
+  }
+}
+/* About */
+#work_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background-image: url(/assets/img/banner-bg-3.jpg);
+  background-position:center center; 
+  background-size: cover;
+  min-height: 70vh;
+  width: 100%;
+}
+.team-member-img {
+  position: relative;
+  padding: 10px !important;
+  filter:grayscale(100%);
+  transition: 0.5s ease-in-out;
+}
+.team-member-img:hover{
+  filter: none;
+}
+.empresa.card:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+.pricing-table:hover,
+.pricing-horizontal:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.blanco:hover {
+  color: #b4aee8 !important;
+  transition-duration: 0.15s;
+}

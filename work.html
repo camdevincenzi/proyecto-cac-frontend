@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>CAC Fit</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">  
+          <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+          <!----- icono para apple y safari --> 
+          <link rel="shortcut icon" type="image/x-icon" href="assets/img/apple-icon.png">
+          <!-- Load Require CSS -->
+          <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+              <!-- iconos  -->
+          <link href="assets/css/boxicon.min.css" rel="stylesheet">
+              <!-- tipo de letra -->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+              <!-- carga CSS -->
+          <link rel="stylesheet" href="assets/css/estilos.css">
+      </head>
+
+<body>
+    <!-- Header -->
+
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <nav id="main_nav" class="navbar navbar-dark navbar-expand-lg pt-4">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+    
+               <img class="logo" src="/assets/img/logo.png" alt="logo"></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-0" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link link mb-2 px-0 blanco" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link mb-2 px-0 blanco" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link mb-2 px-0 blanco" href="work.html">Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link mb-2 px-0 blanco" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link mb-2 px-0 blanco" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link icon" href="#"><i class='bx bx-calendar bx-sm gris' ></i></a>
+                        <a class="nav-link icon" href="#"><i class='bx bx-cog bx-sm gris'></i></a>
+                        <a class="nav-link icon" href="#"><i class='bx bx-user-circle bx-sm gris'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center gris">Nuestras Clases</h1>
+                <h3 class="h5 pb-2 regular-400 gris">Curabitur sodales lorem eget pretium tempor.</h3>
+                <p class="banner-body pb-2 text-muted">
+                    Mauris eget auctor ipsum. Nam vestibulum dolor non nunc sagittis tempus. Suspendisse posuere erat eget dui consectetur, euismod efficitur arcu aliquet. Curabitur vulputate, est sit amet iaculis molestie, tortor ex rutrum dui, nec dictum lorem diam sit amet diam.
+                </p>
+               <a href="contact.html"><button type="submit" class="btn btn-outline-light shadow-none px-4 me-4 light-300 border-2">Consultas</button></a>
+             <a href="about.html"><button type="submit" class="btn shadow-none border-2 px-4 btn-outline-violeta light-300 blanco">Quienes Somos</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="row justify-content-center my-5">
+            <div class="filter-btns shadow-md text-center col-auto">
+                <a class="filter-btn btn border-2 gris m-md-2 px-md-4 active" data-filter=".todos" href="#">Todos</a>
+                <a class="filter-btn btn border-2 gris m-md-2 px-md-4 active" data-filter=".acrobacia" href="#">Acrobacia</a>
+                <a class="filter-btn btn border-2 gris m-md-2 px-md-4 active" data-filter=".fuerza" href="#">Fuerza</a>
+                <a class="filter-btn btn border-2 gris m-md-2 px-md-4 active" data-filter=".resistencia" href="#">Resistencia</a>
+                <a class="filter-btn btn border-2 gris m-md-2 px-md-4 active" data-filter=".relajacion" href="#">Relajación</a>
+            </div>
+        </div>
+
+        <div class="row projects gx-lg-5">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos resistencia">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0 bg-negro">
+                    <img class="card-img-top" src="./assets/img/our-work-01.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-400 gris">Entrenamiento funcional</h5>
+                        <p class="card-text light-300 text-muted">
+                            Sed blandit molestie convallis. Nulla facilisis facilisis metus non sagittis. Fusce ut mauris est. Aenean rhoncus est nec eleifend iaculis.
+                        </p>
+                        <span class="btn shadow-none border-dark border-2 px-4 btn-outline-violeta light-300 blanco">
+                              Read more <i class='bx bx-info-circle'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos fuerza resistencia">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5 bg-negro">
+                    <img class="card-img-top" src="./assets/img/our-work-02.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-400 gris">Crossfit</h5>
+                        <p class="card-text light-300 text-muted">
+                            Sed blandit molestie convallis. Nulla facilisis facilisis metus non sagittis. Fusce ut mauris est. Aenean rhoncus est nec eleifend iaculis.
+                        </p>
+                        <span class="btn shadow-none border-dark border-2 px-4 btn-outline-violeta light-300 blanco">
+                              Read more <i class='bx bx-info-circle'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos fuerza resistencia">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5 bg-negro">
+                    <img class="card-img-top" src="./assets/img/our-work-03.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-400 gris">Calistenia</h5>
+                        <p class="card-text light-300 text-muted">
+                            Sed blandit molestie convallis. Nulla facilisis facilisis metus non sagittis. Fusce ut mauris est. Aenean rhoncus est nec eleifend iaculis.
+                        </p>
+                        <span class="btn shadow-none border-dark border-2 px-4 btn-outline-violeta light-300 blanco">
+                              Read more <i class='bx bx-info-circle'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project todos acrobacia relajacion">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5 bg-negro">
+                    <img class="card-img-top" src="./assets/img/our-work-04.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-400 gris">Acrobacia aérea</h5>
+                        <p class="card-text light-300 text-muted">
+                            Sed blandit molestie convallis. Nulla facilisis facilisis metus non sagittis. Fusce ut mauris est. Aenean rhoncus est nec eleifend iaculis.
+                        </p>
+                        <span class="btn shadow-none border-dark border-2 px-4 btn-outline-violeta light-300 blanco">
+                              Read more <i class='bx bx-info-circle'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project todos relajacion">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5 bg-negro">
+                    <img class="card-img-top" src="./assets/img/our-work-05.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-400 gris">Yoga</h5>
+                        <p class="card-text light-300 text-muted">
+                            Sed blandit molestie convallis. Nulla facilisis facilisis metus non sagittis. Fusce ut mauris est. Aenean rhoncus est nec eleifend iaculis.
+                        </p>
+                        <span class="btn shadow-none border-dark border-2 px-4 btn-outline-violeta light-300 blanco">
+                              Read more <i class='bx bx-info-circle'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project todos relajacion">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5 bg-negro">
+                    <img class="card-img-top" src="./assets/img/our-work-06.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-400 gris">Zumba</h5>
+                        <p class="card-text light-300 text-muted">
+                            Sed blandit molestie convallis. Nulla facilisis facilisis metus non sagittis. Fusce ut mauris est. Aenean rhoncus est nec eleifend iaculis.
+                        </p>
+                        <span class="btn shadow-none border-dark border-2 px-4 btn-outline-violeta light-300 blanco">
+                              Read more <i class='bx bx-info-circle'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn shadow-none bg-violeta text-white"><i class='bx bx-left-arrow-alt'></i></button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn shadow-none bg-gris">1</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn shadow-none bg-violeta text-white">2</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn shadow-none bg-violeta text-white"><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Work -->
+
+    <!-- Start Feature Work -->
+    <section class="bg-negro py-5">
+        <div class="feature-work container my-4">
+            <div class="row d-flex d-flex align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="feature-work-title h4 blanco light-300">Nuestra familia</h3>
+                    <h1 class="feature-work-heading h2 py-3 semi-bold-600 gris">Conoce a los profes</h1>
+                    <p class="feature-work-body text-muted light-300">
+                        Praesent in dolor blandit, congue felis quis, pretium nulla. Nulla eget tellus porttitor, euismod eros ac, interdum turpis. Donec sollicitudin eros ipsum, vitae blandit odio dictum id. Sed sed congue purus. Ut nibh ex, tincidunt eu nisl et, ultricies mattis velit. Quisque eleifend tempor lectus, sed convallis leo commodo ac.
+                    </p>
+                    <p class="feature-work-footer text-muted light-300">Morbi vitae nunc vel felis tempus dapibus. Proin aliquet at purus sit amet elementum. Ut sed nibh orci. Pellentesque enim odio, ultricies a nulla ut, sodales posuere lorem. Nunc semper tempus nisl id aliquet. Nam vehicula nunc et tortor congue, in efficitur nunc feugiat.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1 align-left">
+                    <div class="row">
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-1-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-1.jpg">
+                        </a>
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-2-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-2.jpg">
+                        </a>
+                    </div>
+                    <div class="row pt-4">
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-3-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-3.jpg">
+                        </a>
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-4-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-4.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Feature Work -->
+
+
+   <!-- Start Footer -->
+   <footer class="bg-violeta pt-4">
+    <div class="container">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="/assets/img/logo.png" alt="logo"></a>
+                </a>
+                <p class="blanco my-lg-4 my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut.
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="gris" target="_blank" href="http://facebook.com/">
+                            <i class='icon bx bxl-facebook bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="gris" target="_blank" href="https://www.twitter.com/">
+                            <i class='icon bx bxl-twitter bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="gris" target="_blank" href="https://web.whatsapp.com/">
+                            <i class='icon bx bxl-whatsapp bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="gris" target="_blank" href="https://www.instagram.com/">
+                            <i class='icon bx bxl-instagram bx-md'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h5 pb-lg-3 gris light-300">Nuestro Estudio</h2>
+                    <ul class="list-unstyled gris light-300">
+                        <li class="pb-2">
+                            <i class='icon bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco" 
+                            href="index.html">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                            href="about.html">Nosotros</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none blanco py-1" 
+                            href="pricing.html">Precios</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                            href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h5 pb-lg-3 gris light-300">Clases</h2>
+                <ul class="list-unstyled gris light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="#">Entrenamiento funcional</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="#">Crossfit</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="#">Calistenia</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="#">Acrobacia aérea</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="#">Yoga</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="#">Zumba</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h5 pb-lg-3 gris light-300">Te esperamos en:</h2>
+                <ul class="list-unstyled blanco light-300">
+                    <li class="pb-2">
+                        <i class='gris bx-fw bx bxs-phone bx-xs'></i><a class="text-decoration-none blanco py-1" 
+                        href="tel:010-020-0340">021-2354-4568</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='gris bx-fw bx bxs-envelope bx-xs'></i><a class="text-decoration-none blanco py-1"
+                        href="mailto:info@company.com">info@company.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 bg-negro py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center blanco light-300">
+                        © Copyright 2021 CAC Fit. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center gris light-300">
+                        Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+                        href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
